@@ -1,0 +1,15 @@
+{
+  "name": "devmail-plugins",
+  "description": "Official DevMail plugins for Claude Code",
+  "owner": {
+    "name": "DevMail",
+    "url": "https://devmail.space"
+  },
+  "plugins": [
+    {
+      "name": "devmail",
+      "source": "./plugins/devmail",
+      "description": "Read and search your DevMail test inbox: wait for verification emails, extract links and OTP codes, inspect attachments."
+    }
+  ]
+}

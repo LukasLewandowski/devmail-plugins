@@ -1,0 +1,38 @@
+{
+  "name": "devmail",
+  "displayName": "DevMail",
+  "version": "0.1.0",
+  "description": "Read and search your DevMail test inbox from Claude Code: wait for verification emails, extract links and OTP codes, inspect headers and attachments.",
+  "author": {
+    "name": "DevMail",
+    "url": "https://devmail.space"
+  },
+  "homepage": "https://devmail.space/docs#mcp",
+  "repository": "https://github.com/LukasLewandowski/devmail-plugins",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "testing",
+    "qa",
+    "e2e",
+    "mcp",
+    "inbox"
+  ],
+  "privacyPolicyUrl": "https://devmail.space/privacy",
+  "termsOfServiceUrl": "https://devmail.space/terms",
+  "userConfig": {
+    "api_key": {
+      "type": "string",
+      "title": "DevMail API key",
+      "description": "Your mlb_... API key from https://devmail.space/settings",
+      "required": true,
+      "sensitive": true
+    },
+    "mcp_url": {
+      "type": "string",
+      "title": "MCP endpoint",
+      "description": "Change only for local development (e.g. http://localhost:8787/mcp)",
+      "default": "https://mcp.devmail.space/mcp"
+    }
+  }
+}
